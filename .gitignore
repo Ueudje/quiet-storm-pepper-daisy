@@ -1,0 +1,17 @@
+node_modules/
+.project_id
+.github_repo
+.env
+.env.*
+
+# Local tooling, generated output, and art intermediates.
+# The playable assets live in public/game.
+.grok/
+.vercel/
+.tanstack/
+artifacts/
+screenshots/
+assets/
+AGENTS.md
+.node_modules.lock
+dist/
