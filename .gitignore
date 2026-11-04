@@ -15,3 +15,5 @@ assets/
 AGENTS.md
 .node_modules.lock
 dist/
+site-dist/
+.pages-wt/

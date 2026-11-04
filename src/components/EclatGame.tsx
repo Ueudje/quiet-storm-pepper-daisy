@@ -20,6 +20,8 @@ function loadSave(): Save {
   }
 }
 
+const artUrl = (file: string) => `${import.meta.env.BASE_URL}game/${file}`;
+
 async function loadArt(art: Art) {
   const load = (src: string) =>
     new Promise<HTMLImageElement>((resolve, reject) => {
@@ -30,19 +32,19 @@ async function loadArt(art: Art) {
       img.src = src;
     });
   const [sky, h1, h2, h3, h4, c1, c2, c3, c4, spike, pl, pm, pr] = await Promise.all([
-    load("/game/sky.jpg"),
-    load("/game/idle-1.png"),
-    load("/game/idle-2.png"),
-    load("/game/idle-3.png"),
-    load("/game/idle-4.png"),
-    load("/game/coin-1.png"),
-    load("/game/coin-2.png"),
-    load("/game/coin-3.png"),
-    load("/game/coin-4.png"),
-    load("/game/spike.png"),
-    load("/game/plat-l.png"),
-    load("/game/plat-m.png"),
-    load("/game/plat-r.png"),
+    load(artUrl("sky.jpg")),
+    load(artUrl("idle-1.png")),
+    load(artUrl("idle-2.png")),
+    load(artUrl("idle-3.png")),
+    load(artUrl("idle-4.png")),
+    load(artUrl("coin-1.png")),
+    load(artUrl("coin-2.png")),
+    load(artUrl("coin-3.png")),
+    load(artUrl("coin-4.png")),
+    load(artUrl("spike.png")),
+    load(artUrl("plat-l.png")),
+    load(artUrl("plat-m.png")),
+    load(artUrl("plat-r.png")),
   ]);
   art.sky = sky;
   art.hero = [h1, h2, h3, h4];

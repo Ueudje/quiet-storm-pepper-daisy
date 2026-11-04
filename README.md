@@ -1,5 +1,7 @@
 # Éclat
 
+Play it: [ueudje.github.io/quiet-storm-pepper-daisy](https://ueudje.github.io/quiet-storm-pepper-daisy/)
+
 A side-scrolling platformer set in a hanging garden at night. You play a small fox with a lantern. Each garden ends at a pennant. The lake below, and the brambles, send you back to the last lantern you passed.
 
 The piece count at the top of the screen is the score. Finishing a garden keeps the best haul for that garden on this device, and marks the garden as cleared. There is no account and no server save.
