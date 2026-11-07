@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@source ".";
+
+@theme {
+  --color-bg: #120e24;
+  --color-surface: #1c1733;
+  --color-surface-2: #2a2344;
+  --color-fg: #f6f0e4;
+  --color-muted: #b3a7c4;
+  --color-gold: #e8b84a;
+  --color-rose: #d4566a;
+  --color-moss: #6fbf8a;
+  --color-line: #3c335c;
+  --font-display: "Fraunces", "Iowan Old Style", Palatino, serif;
+  --font-sans: "Outfit", "Avenir Next", ui-sans-serif, system-ui, sans-serif;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+  }
+
+  button:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+  }
+}
+
+@keyframes eclat-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.eclat-rise {
+  animation: eclat-rise 220ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eclat-rise {
+    animation: none;
+  }
+}

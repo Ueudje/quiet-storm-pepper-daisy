@@ -1,0 +1,26 @@
+{
+  "name": "eclat",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A moonlit platformer. A lantern fox crosses three hanging gardens.",
+  "type": "module",
+  "scripts": {
+    "dev": "cp src/document.html index.html && vite",
+    "build": "cp src/document.html index.html && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "0.510.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.2.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "vite": "8.3.4"
+  }
+}
